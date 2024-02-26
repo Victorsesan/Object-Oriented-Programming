@@ -1,0 +1,5 @@
+(function() {
+  console.log("A cozy nest is ready");
+})();
+
+//To do this simply remove the name of the function as seen in the example. The function must then be wrapped in parentheses with another set of parentheses at the end to immediately call the function.

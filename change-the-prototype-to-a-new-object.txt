@@ -1,0 +1,17 @@
+function Dog(name) {
+  this.name = name;
+}
+
+Dog.prototype = {
+  // Only change code below this line
+
+numLegs: 2,
+  eat() {
+    console.log("nom nom nom");
+  },
+  describe() {
+    console.log("My name is " + this.name);
+  }
+};
+
+//shortened the syntax on the functions “eat” and “describe”, did this by removing the “:” and the word “function” with ES6 we are allowed to do this.

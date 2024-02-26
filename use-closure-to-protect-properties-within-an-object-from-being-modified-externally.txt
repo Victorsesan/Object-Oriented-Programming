@@ -1,0 +1,11 @@
+function Bird() {
+  let weight = 15;
+
+  this.getWeight = function() {
+    return weight;
+  };
+}
+
+//In ES6 syntax we can make the function a bit less verbose like so:function Bird() { let weight = 15; this.getWeight = () => weight; }
+
+//Just like in the example given, rather than declaring the weight variable with the this keyword, the let keyword must be used to declare it as a private variable. This way it can only be accessed inside the Bird function. The getWeight method must then be added inside the Bird function to access the weight variable.

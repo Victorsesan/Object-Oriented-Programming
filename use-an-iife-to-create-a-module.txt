@@ -1,0 +1,19 @@
+let funModule = (function() {
+  return {
+    isCuteMixin: function(obj) {
+      obj.isCute = function() {
+        return true;
+      };
+    },
+    singMixin: function(obj) {
+      obj.sing = function() {
+        console.log("Singing to an awesome tune");
+      };
+    }
+  };
+})();
+
+//If using ES6, the same can be rewritten as:let funModule = ( () => {return {isCuteMixin: (obj) => {obj.isCute = () => { true; };},singMixin: (obj) => {obj.sing = () => { console.log("Singing to an awesome tune"); }}}})();
+
+//Both Mixin's must be wrapped in a new funModule so an esay starting point is to comment out all the code so far. Start writing your new funModule code. Inside the new module, you need to write a return statement to return both Mixin code blocks. Simply copy both original Mixin code blocks into your new module code, but remember to seperate both mixins with a ,
+
